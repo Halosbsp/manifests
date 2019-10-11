@@ -2,6 +2,18 @@
 <manifest>
     <remote fetch="." name="halosbsp" review="https://github.com/Halosbsp"/>
     <default remote="halosbsp" revision="master" sync-j="4"/>
+  <project name="buildroot" path="buildroot" revision="09e361b1ec09c7c439c11308334d85a4e16be644" upstream="master">
+    <linkfile dest="Makefile" src="Makefile"/>
+    <linkfile dest="Config.in" src="Config.in"/>
+    <linkfile dest="envconfig.mk" src="envconfig.mk"/>
+    <linkfile dest="config" src="config"/>
+    <linkfile dest="support" src="support"/>
+    <linkfile dest="opensource/Config.in" src="opensource/Config.in"/>
+    <linkfile dest="opensource/uboot/Config.in" src="opensource/uboot/Config.in"/>
+    <linkfile dest="opensource/kernel/Config.in" src="opensource/kernel/Config.in"/>
+    <linkfile dest="opensource/busybox/Config.in" src="opensource/bosybox/Config.in"/>
+  </project>
+  <project name="u-boot" path="opensource/uboot/rock_3288/" revision="3947e40b815a39804243ebc236b1064a8482ec98" upstream="stable-4.4-rk3288-linux"/>
+  <project name="kernel" path="opensource/kernel/rock_3288/" revision="f094cf626700ac2e2c816f6c6799a174ba290fc9" upstream="stable-4.4-rk3288-linux"/>
 
-  <project name="uboot" path="opensource/uboot/rock_3288" revision="f0c33010c6a89715692b1532aa94fbbb982eabb6" upstream="master"/>
 </manifest>
