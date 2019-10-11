@@ -11,9 +11,10 @@
     <linkfile dest="opensource/Config.in" src="opensource/Config.in"/>
     <linkfile dest="opensource/uboot/Config.in" src="opensource/uboot/Config.in"/>
     <linkfile dest="opensource/kernel/Config.in" src="opensource/kernel/Config.in"/>
-    <linkfile dest="opensource/busybox/Config.in" src="opensource/bosybox/Config.in"/>
+    <linkfile dest="opensource/busybox/Config.in" src="opensource/busybox/Config.in"/>
   </project>
   <project name="u-boot" path="opensource/uboot/rock_3288/" revision="3947e40b815a39804243ebc236b1064a8482ec98" upstream="stable-4.4-rk3288-linux"/>
   <project name="kernel" path="opensource/kernel/rock_3288/" revision="f094cf626700ac2e2c816f6c6799a174ba290fc9" upstream="stable-4.4-rk3288-linux"/>
-
+  <project name="opentools" path="opentools" revision="752c5c4cccb688ba8b015b16bfa1163d6804feea" upstream="master"/>
+  <project name="documents" path="docs" revision="5ea89c2a1ce751e962ccf119b0390eb1c4a2307f" upstream="master"/>
 </manifest>
