@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="." name="halosbsp" review="https://github.com/Halosbsp"/>
+    <default remote="halosbsp" revision="master" sync-j="4"/>
+
+  <project name="uboot" path="opensource/uboot/rock_3288" revision="f0c33010c6a89715692b1532aa94fbbb982eabb6" upstream="master"/>
+</manifest>
